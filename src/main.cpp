@@ -1,10 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
-
-int main()
-{
-	std::cout << "Math library\n";
-=======
 #include "Vector3.h"
 
 int main()
@@ -23,6 +17,5 @@ int main()
 
 	std::cout << v2 << "\n";
 
->>>>>>> 6ac0a6d (Project setup)
 	return 0;
 }
