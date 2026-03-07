@@ -1,10 +1,14 @@
 #include <iostream>
 #include "Vector3.h"
+#include "Vector4.h"
 
 int main()
 {
 	Math::Vector3<float> v;
-	
+
+	Math::Vector4<float> v4;
+	v4.setVectorData(1.f, 2.f, 3.f, 1.f);
+
 	v.setVectorData(1.f, 2.f, 0.f);
 
 	Math::Vector3<float> v2(v);
@@ -22,6 +26,7 @@ int main()
 		std::cout << r.what() << "\n";
 	}
 	
+	std::cout << v4 << "\n";
 
 	std::cout << devision;
 
