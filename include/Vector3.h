@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cmath>
 #include <ostream>
 #include <stdexcept>
@@ -229,4 +231,8 @@ namespace Math
         o << v.x << " " << v.y << " " << v.z;
         return o;
     }
+
+    template class Vector3<float>;
+    template class Vector3<int>;
+    template class Vector3<double>;
 }

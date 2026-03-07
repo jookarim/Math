@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ---------------- Math library ----------------
 add_executable(Math
     src/main.cpp
-)
+ "include/VectorUtils.h")
 
 target_include_directories(Math PRIVATE
     include
