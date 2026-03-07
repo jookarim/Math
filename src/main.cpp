@@ -29,6 +29,10 @@ int main()
     float dot = Math::dot(v, v2);
     std::cout << "dot(v, v2) = " << dot << "\n";
 
+    Math::Vector3<float> cross = Math::cross(v, v2);
+
+    std::cout << "cross(v, v2) = " << cross << "\n";
+
     std::cout << "v4 = " << v4 << "\n";
 
     std::cout << "division = " << division << "\n";

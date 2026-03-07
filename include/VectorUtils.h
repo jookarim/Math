@@ -15,7 +15,11 @@ namespace Math
         }
         else
         {
-            if constexpr (std::is_same_v<T, Vector4<float>> || std::is_same_v<T, Vector4<int>> || std::is_same_v<T, Vector4<double>>)
+            if constexpr (
+                std::is_same_v<T, Vector4<float>> ||
+                std::is_same_v<T, Vector4<int>> ||
+                std::is_same_v<T, Vector4<double>>
+                )
             {
                 return a.x * b.x + a.y * b.y + a.z * b.z + a.w * b.w;
             }
@@ -24,6 +28,17 @@ namespace Math
                 return a.x * b.x + a.y * b.y + a.z * b.z;
             }
         }
+    }
+
+
+    template<typename T>
+    Vector3<T> cross(const Vector3<T>& a, const Vector3<T>& b)
+    {
+        return Vector3<T>(
+            a.y * b.z - a.z * b.y,
+            a.z * b.x - a.x * b.z,
+            a.x * b.y - a.y * b.x
+        );
     }
 
     template class Vector4<float>;
