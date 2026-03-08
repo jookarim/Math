@@ -5,6 +5,12 @@
 
 namespace Math
 {
+    using Vec3 = Vector3<float>;
+    using Vec4 = Vector4<float>;
+    using Vec3i = Vector3<int>;
+    using Vec4i = Vector4<int>;
+    using Vec3ui = Vector3<unsigned int>;
+    using Vec4ui = Vector4<unsigned int>;
 
     template<typename T>
     float dot(const T& a, const T& b)
@@ -40,13 +46,4 @@ namespace Math
             a.x * b.y - a.y * b.x
         );
     }
-
-    template class Vector4<float>;
-    template class Vector4<int>;
-    template class Vector4<double>;
-
-    template class Vector3<float>;
-    template class Vector3<int>;
-    template class Vector3<double>;
-
 }

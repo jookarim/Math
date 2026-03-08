@@ -5,7 +5,7 @@
 
 int main()
 {
-    Math::Vector3<float> v;
+    Math::Vec3 v;
     v.setVectorData(1.f, 2.f, 0.f);
 
     Math::Vector4<float> v4;
